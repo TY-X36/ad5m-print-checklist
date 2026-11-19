@@ -1,0 +1,51 @@
+# Improving the checklist
+
+The print checklist (README.md) is for anyone printing. This file is for whoever improves it: how prints are used to test changes, how the checklist is edited safely, and why its rules exist.
+
+The supporting files:
+- **OPEN-ISSUES.md** — problems seen and not yet proven fixed.
+- **PRINT-LOG.md** — one row per print, with what changed and the result.
+- **CHANGELOG.md** — every change to the checklist and the reason for it.
+- **start-code.gcode** — the tested start of every print.
+
+## When a print fails or shows a defect
+1. Write it in OPEN-ISSUES.md straight away: what it looked like, where, the settings in use, and photos or recording.
+2. Find the root cause from the evidence (camera recording, the sliced file, the printer's temperatures), not from guesses. Compare with the last print that did not have the problem.
+3. Change the checklist (or the start code) so the cause cannot happen again, and record the change in CHANGELOG.md.
+4. Prove it with the next print. Only then remove the issue from OPEN-ISSUES.md.
+
+## Testing changes
+
+- **Every print is a real object.** Tests are done through fun or useful prints of under about 1 hour, chosen together with the owner, that exercise whatever is being tested (small footprints, moving joints, overhangs, a new material). Pure calibration shapes are used only when nothing else can measure the value.
+- **One change at a time.** Change as few things as possible between prints, and record in PRINT-LOG.md exactly what changed, so a better or worse result can be traced to its cause.
+- **An open issue is closed only by a print.** A fix counts as proven only when a print made with it shows the problem is gone. Until then the issue stays in OPEN-ISSUES.md.
+
+## Editing the checklist safely
+
+- Get the latest version before editing; other people and agents also edit it.
+- Refer to other steps by their wording as well as their number, because numbers change when steps are added.
+- After editing, re-read the whole change before saving it: check step numbers, cross-references between steps, and that tables were not altered by accident.
+- Record every change in CHANGELOG.md with the reason, and move any finished item out of OPEN-ISSUES.md only when a print has proven it.
+- Keep README.md plain English, with nothing tied to one computer, one AI or one slicer, except in its practical notes section.
+- Keep README.md only about printing; anything about testing or changing the checklist belongs in this file.
+
+## Lessons learned (why the checklist's rules exist)
+
+- Early prints failed because the printer heated to full temperature, oozed, then pressed the oozing nozzle onto the plate to measure it. The ooze smeared the tip and spoiled the bed measurement, so the first layers came out wrong.
+- Files sliced for a different printer brand gave wrong temperatures, speeds and start routines.
+- Silk filament, small parts and fast travel moves led to parts being knocked loose and turning into a tangled mess.
+- Small hooks, blobs or hairs at the start of each shape are a warning sign of ooze, not a cosmetic detail. Never ignore them.
+- An AI assistant once prepared a print file before confirming which filament was loaded, because it "remembered" the filament from an earlier print. Temperature, cooling, bed heat and flow all depend on the exact filament, so that file was invalid. This is why the golden rules exist: nothing is carried over from a previous print, steps are never done out of order, and any file sliced before step 10 must be thrown away and sliced again.
+- Cleaning the nozzle at printing temperature does not work: a hot nozzle keeps oozing, so the tip is dirty again straight away. Clean it at the lower cleaning temperature instead, and check for damp filament on the purge line.
+- A start sequence once heated the nozzle to printing temperature directly above the purge spot and then lowered straight down. The drip that formed while heating was pushed up onto the nozzle and smeared across the plate. This is why the filament is pulled back before heating and the nozzle comes down at an angle.
+- When the printer's built-in leveling was switched off and nothing else measured the bed, the first layer came out uneven: almost see-through in places and normal in others. The bed must still be measured every print, just with a clean nozzle at or below 140 °C.
+- During a checklist run the sender labelled steps with the wrong numbers because it numbered them from memory after the checklist had changed. Step numbers and wording must always be read from the current checklist.
+- A tiny string formed while cleaning PLA at 170 °C, so the PLA cleaning temperature was lowered to 160 °C.
+- The start code once ended by wiping onward onto bare plate. The ooze string had nothing to stick to, curled up and wrapped onto the outside of the nozzle on the way to the print. The wipe now goes backwards over the fresh purge line and lifts higher.
+- The parts of a flow calibration print were removed and lost before their result was read, so the whole test had to be repeated. A picture is now taken before anything leaves the plate, and test parts are kept until their result is written down.
+- The Moisture Table once had no row for PLA left out for less than a week, so a spool left out for two days could not be classified. Every storage time now has a row.
+- The start code file once had square brackets inside its instruction comments. OrcaSlicer read them as placeholders and refused to slice. Comments in the start code must never contain square brackets.
+- During a print the sender only watched the printer's status, which cannot see what is on the plate, and looked at the cameras only when asked. The camera check is now a fixed 5-minute interval.
+- A flow calibration plate was ruined at layer 8 of 10: on camera, a small tile lifted at one edge, the nozzle picked up a blob from it and dragged several tiles across the plate. Causes found: the bed dropped from 55 to 50 °C after the first layer, the small tiles had no brim, and top layers were printed at 200 mm per second. That is why the bed now stays at one temperature, small parts always get a brim, and small parts are printed more slowly.
+- Pressure advance was left at the slicer's default (0.025), and every part had a blob where each line started. A pressure advance test showed the blobs disappear from about 0.035 upward; 0.04 is now in the Material Table.
+- During the first day, defects were called cosmetic, failures were written down and then printing continued, the camera was looked at only when asked, and several things were changed in one print. Each made problems last longer. That is why there are now golden rules 4 and 5, the camera-first and yes/no rules, the full file check in step 30, and the testing rules.

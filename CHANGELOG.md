@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Split printing from improving
+
+- README.md now holds only what a person or agent needs to print. Testing changes, editing rules and the lessons learned moved to the new IMPROVING.md, with a short procedure for handling a failed print. Golden rule 5 and the last step point to it.
+- Reason: the print checklist was mixing instructions for printing with instructions for maintaining the checklist.
+
 ## 2026-11-20 — Process lessons from the first day
 
 - Golden rules 4 (no defect is cosmetic) and 5 (stop after any failure until the root cause is fixed in the checklist).
