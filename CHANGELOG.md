@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Phone lights on for every print
+
+- Background notes: the recorder now switches both phone lights on when a recording starts, keeps them on, and switches them off when it stops. Step 54 ("For the whole print, keep the cameras watched continuously"): both lights should be on for the whole print.
+- Reason: the owner wants every print lit. On the 09:52 black PETG print a light switched on before the recording was switched off again when the previous recording stopped, so the print started in the dark.
+
 ## 2026-11-20 — Automatic watcher: bright pictures, readable answers
 
 - Step 54: give an automatic watcher a picture bright enough to tell dark filament from the plate, and check early that every answer contains a fixed verdict word.
