@@ -2,6 +2,10 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Run 4 stopped: parts knocked loose
+
+- New open issue 4 with the camera evidence, settings in use and the next tests.
+
 ## 2026-11-19 — Camera checks every 5 minutes
 
 - Step 53: look at both camera pictures at least every 5 minutes for the whole print; status alone does not count.
