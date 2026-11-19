@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Automatic watcher: bright pictures, readable answers
+
+- Step 54: give an automatic watcher a picture bright enough to tell dark filament from the plate, and check early that every answer contains a fixed verdict word.
+- Reason: during the overnight black PETG print the watcher read dark night pictures as "empty plate" or "finished", and about 1 in 7 of its answers were free text with no verdict word, so a real problem could have been missed. Fixed with the phone's night mode and by forcing plain answers.
+
 ## 2026-11-20 — Every file has a thumbnail
 
 - File check (step 30) now requires a 140 × 110 preview picture; practical note explains how to add one when slicing from the command line.
