@@ -33,4 +33,5 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 ## 6. Push-on fits come out too loose
 - **Seen (overnight black PETG print, 2026-11-20):** the spinner caps were designed with a hole 0.2 mm wider than the 8 mm peg they press onto. They slide on and fall straight off; there is no grip at all.
 - **Lesson so far:** a hole made bigger than the peg gives a sliding fit, not a push-on fit. A part meant to stay on needs a hole the same size as the peg or slightly smaller.
-- **Next step:** check whether the gear fidget's caps (hole exactly the size of its 5 mm peg) grip. Reprint the spinner caps with a smaller hole, find the size that pushes on firmly by hand and stays, and record the working sizes for each material in the checklist's practical notes.
+- **Gear fidget caps (same print):** hole exactly the size of the 5 mm peg; they push on firmly and stay.
+- **Next step:** reprint the spinner caps with a smaller hole, find the size that pushes on firmly by hand and stays, and record the working sizes for each material in the checklist's practical notes.
