@@ -24,3 +24,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Contributing causes:** bed lowered from 55 to 50 °C after the first layer; small tiles without a brim; top surfaces and outer walls at 200 mm/s; 5 °C hotter and less pull-back than run 3 (more ooze at each seam).
 - **Checklist changes made:** bed stays at one temperature for the whole print; brim on every part under about 30 × 30 mm; outer walls and top surfaces at about 100 mm/s on small parts and calibration tests.
 - **Still to confirm:** rerun the flow test with these changes; if it completes with no part lifting, close this issue.
+
+## 5. Printer drops off Wi-Fi during a print
+- **Seen (overnight print, 2026-11-20 02:17):** about 20 minutes into the print the printer stopped answering on the network (no ping, no status, no API), while the camera showed it still printing from its own storage.
+- **Impact:** status-based watching, pausing over the network and the finish notification stop working; only the cameras still work.
+- **Next step:** check whether the printer comes back by itself; consider a fixed address and a stronger Wi-Fi signal near the printer, and check the printer's power-saving or Wi-Fi settings. Watching by camera must not depend on the printer's network.
