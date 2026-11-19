@@ -2,6 +2,13 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Root cause of parts knocked loose, and three fixes
+
+- Bed temperature held for the whole print (Material Table and rule under it).
+- Step 27: brim on any part under about 30 × 30 mm or taller than it is wide; mouse ears when the designer forbids a brim.
+- New step 24: outer walls and top surfaces at about 100 mm/s on small parts and calibration tests. Steps from 24 on are renumbered and cross-references updated.
+- Reason: camera recording of run 4 showed a small tile lifting, then being dragged by the nozzle.
+
 ## 2026-11-20 — Run 4 stopped: parts knocked loose
 
 - New open issue 4 with the camera evidence, settings in use and the next tests.

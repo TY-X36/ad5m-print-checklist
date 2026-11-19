@@ -18,7 +18,7 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Next step:** test measuring only the area under the model (adaptive bed measuring) with a no-print test. Only change the checklist if it works.
 
 ## 4. Parts knocked loose near the top of a print
-- **Seen (run 4, on camera, recording kept as failed):** at layers 8 to 9 of 10, the nozzle snagged the front-left flow tiles and dragged them off the plate, then printed strings into the gaps. The print was stopped.
-- **Settings in use:** bed 55 °C first layer then 50 °C, no brim, travel 250 mm/s, z-hop 0.4 mm, seam blobs present (issue 1), flow calibration tiles (some over-extruded on purpose).
-- **Likely causes, most likely first:** the nozzle catching a raised edge (seam blob or over-extruded top) during travel; lower bed temperature after the first layer reducing grip; small flat parts without a brim.
-- **Next step:** fix issue 1 first, then test keeping the bed at the first-layer temperature for the whole print and a higher travel lift (about 0.6 mm). Add a brim to small parts until this is solved.
+- **Root cause (run 4, from the camera recording, 1 frame per second):** a small front tile lifted at one edge while its top layers were printing; the nozzle then picked up a blob from it and dragged several tiles across the plate.
+- **Contributing causes:** bed lowered from 55 to 50 °C after the first layer; small tiles without a brim; top surfaces and outer walls at 200 mm/s; 5 °C hotter and less pull-back than run 3 (more ooze at each seam).
+- **Checklist changes made:** bed stays at one temperature for the whole print; brim on every part under about 30 × 30 mm; outer walls and top surfaces at about 100 mm/s on small parts and calibration tests.
+- **Still to confirm:** rerun the flow test with these changes; if it completes with no part lifting, close this issue.
