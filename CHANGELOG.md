@@ -2,6 +2,13 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Lessons from the third checklist run
+
+- Nozzle cleaning: a thickly folded paper towel is allowed when there is no brass brush. Reason: no brush was available.
+- PLA and Silk PLA cleaning temperature lowered from 170 °C to 160 °C. Reason: a string formed at 170 °C.
+- The sender must read step numbers and wording from the current checklist. Reason: steps were mislabelled from memory.
+- Material Table shows first-layer and later-layer bed temperatures. Reason: the bed drops after the first layer and that looked like an error.
+
 ## 2026-11-19 — Start code made reproducible for any sender
 
 - Added `start-code.gcode`: the tested clean-start sequence. Step 13 says to paste it in exactly, changing only the two temperature placeholders.

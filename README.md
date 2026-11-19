@@ -18,7 +18,7 @@ Each step says who does it:
 - **[AT PRINTER]** — the person physically standing next to the printer. Only they can check anything you need eyes or hands for.
 - **[BOTH]** — both must do it or agree on it.
 
-The sender runs the checklist. When a step is for the person at the printer, the sender asks about that one step only, waits for the answer, then moves to the next step. Never hand the person several steps at once.
+The sender runs the checklist. When a step is for the person at the printer, the sender asks about that one step only, waits for the answer, then moves to the next step. Never hand the person several steps at once. Always read the step number and wording from the current version of this checklist; never number or paraphrase steps from memory.
 
 Do not move to the next step until the current one is done. If a step cannot be done, stop and fix it or ask the owner first.
 
@@ -85,7 +85,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 36. **[AT PRINTER]** If the filament was just changed, push plastic through until the new colour comes out clean.
 37. **[AT PRINTER]** Check the spool turns freely, with no tangles, crossed loops or snags.
 38. **[BOTH]** Set the nozzle to the cleaning temperature for this material (see the Material Table), never to printing temperature. At cleaning temperature old plastic is soft enough to brush off but does not ooze out. If the nozzle is already hotter (for example after purging a filament change), pull the filament back about 2 mm and let it cool to cleaning temperature first.
-39. **[AT PRINTER]** At cleaning temperature, look at the tip with a torch and scrub it with a brass brush until no old plastic, burnt residue or blobs remain.
+39. **[AT PRINTER]** At cleaning temperature, look at the tip with a torch and scrub it with a brass brush until no old plastic, burnt residue or blobs remain. If there is no brass brush, a thickly folded paper towel (folded about ten times) can be used with quick, light wipes; then check for paper fibres on the tip. Never wipe with paper at printing temperature.
 40. **[AT PRINTER]** Pull off any string still hanging from the tip with tweezers, never fingers.
 41. **[BOTH]** Switch the nozzle heater off, let it cool below 140 °C, and check the tip is still clean.
 42. **[AT PRINTER]** Make sure no fan, open window or air conditioner is blowing on the printer, and nothing nearby can fall onto the bed. The printer's own fans running is normal: the hotend fan runs whenever the nozzle is warm.
@@ -124,11 +124,11 @@ Do not move to the next step until the current one is done. If a step cannot be 
 
 ## Material Table (starting values for this printer)
 
-| Material | Nozzle | First layer nozzle | Cleaning temp | Bed | Part cooling fan | Notes |
+| Material | Nozzle | First layer nozzle | Cleaning temp | Bed (first layer / rest) | Part cooling fan | Notes |
 |---|---|---|---|---|---|---|
-| PLA (basic) | 205–210 °C | 215 °C | 170 °C | 55 °C | Full | Default choice; best for small or detailed parts. |
-| Silk PLA | 210–215 °C | 220 °C | 170 °C | 55 °C | Full | Print slower; shiny but weaker; expect some stringing. |
-| PETG | 235–240 °C | 240 °C | 190 °C | 75 °C | 30–50% | Glue stick on the plate; strong and heat-resistant. |
+| PLA (basic) | 205–210 °C | 215 °C | 160 °C (170 °C if residue will not soften) | 55 °C / 50 °C | Full | Default choice; best for small or detailed parts. |
+| Silk PLA | 210–215 °C | 220 °C | 160 °C (170 °C if residue will not soften) | 55 °C / 50 °C | Full | Print slower; shiny but weaker; expect some stringing. |
+| PETG | 235–240 °C | 240 °C | 190 °C | 75 °C / 70 °C | 30–50% | Glue stick on the plate; strong and heat-resistant. |
 
 When a material is tested and better values are found, update this table.
 
@@ -160,3 +160,5 @@ When a material is tested and better values are found, update this table.
 - Cleaning the nozzle at printing temperature does not work: a hot nozzle keeps oozing, so the tip is dirty again straight away. Clean it at the lower cleaning temperature instead, and check for damp filament on the purge line.
 - A start sequence once heated the nozzle to printing temperature directly above the purge spot and then lowered straight down. The drip that formed while heating was pushed up onto the nozzle and smeared across the plate. This is why the filament is pulled back before heating and the nozzle comes down at an angle.
 - When the printer's built-in leveling was switched off and nothing else measured the bed, the first layer came out uneven: almost see-through in places and normal in others. The bed must still be measured every print, just with a clean nozzle at or below 140 °C.
+- During a checklist run the sender labelled steps with the wrong numbers because it numbered them from memory after the checklist had changed. Step numbers and wording must always be read from the current checklist.
+- A tiny string formed while cleaning PLA at 170 °C, so the PLA cleaning temperature was lowered to 160 °C.
