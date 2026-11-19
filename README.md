@@ -145,6 +145,8 @@ When a material is tested and better values are found, update this table.
 | Material | How it was stored | What to do |
 |---|---|---|
 | Any | Sealed in a bag with desiccant | Print normally. |
+| PLA or Silk PLA | Left out less than 1 week | Print normally. |
+| PETG | Left out up to 3 days | Print normally. |
 | PLA or Silk PLA | Left out 1 to 4 weeks | "Lightly damp": print with damp-filament adjustments (below). |
 | PLA or Silk PLA | Left out more than 4 weeks | Dry before printing. |
 | PETG | Left out more than 3 days | Dry before printing. |
@@ -170,3 +172,4 @@ When a material is tested and better values are found, update this table.
 - A tiny string formed while cleaning PLA at 170 °C, so the PLA cleaning temperature was lowered to 160 °C.
 - The start code once ended by wiping onward onto bare plate. The ooze string had nothing to stick to, curled up and wrapped onto the outside of the nozzle on the way to the print. The wipe now goes backwards over the fresh purge line and lifts higher.
 - The parts of a flow calibration print were removed and lost before their result was read, so the whole test had to be repeated. A picture is now taken before anything leaves the plate, and test parts are kept until their result is written down.
+- The Moisture Table once had no row for PLA left out for less than a week, so a spool left out for two days could not be classified. Every storage time now has a row.

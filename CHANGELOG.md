@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Moisture Table covers every storage time
+
+- Added rows: PLA and Silk PLA left out less than 1 week, and PETG left out up to 3 days: print normally.
+- Reason: a spool left out for two days matched no row in the table.
+
 ## 2026-11-19 — Keep test results until they are read
 
 - New step 56: picture of the finished print before anything leaves the plate; test parts are kept until their result is written into the checklist. Step 61 asks for a photo of every test print.
