@@ -151,10 +151,10 @@ When a material is tested and better values are found, update this table.
 |---|---|---|
 | Any | Sealed in a bag with desiccant | Print normally. |
 | PLA or Silk PLA | Left out less than 1 week | Print normally. |
-| PETG | Left out up to 3 days | Print normally. | | Not tested: run a pressure advance test first
+| PETG | Left out up to 3 days | Print normally. |
 | PLA or Silk PLA | Left out 1 to 4 weeks | "Lightly damp": print with damp-filament adjustments (below). |
 | PLA or Silk PLA | Left out more than 4 weeks | Dry before printing. |
-| PETG | Left out more than 3 days | Dry before printing. | | Not tested: run a pressure advance test first
+| PETG | Left out more than 3 days | Dry before printing. |
 | Any | Pops, crackles, steams or bubbles on the purge line (step 50) | Dry before printing, no matter how it was stored. |
 
 **Damp-filament adjustments:** lower the nozzle temperature by about 5 °C, increase retraction by about 0.2 mm, and turn on "avoid crossing walls" (or the slicer's equivalent) so travel moves stay over the part. These reduce stringing and ooze but do not remove the moisture.
