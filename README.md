@@ -173,3 +173,4 @@ When a material is tested and better values are found, update this table.
 - The start code once ended by wiping onward onto bare plate. The ooze string had nothing to stick to, curled up and wrapped onto the outside of the nozzle on the way to the print. The wipe now goes backwards over the fresh purge line and lifts higher.
 - The parts of a flow calibration print were removed and lost before their result was read, so the whole test had to be repeated. A picture is now taken before anything leaves the plate, and test parts are kept until their result is written down.
 - The Moisture Table once had no row for PLA left out for less than a week, so a spool left out for two days could not be classified. Every storage time now has a row.
+- The start code file once had square brackets inside its instruction comments. OrcaSlicer read them as placeholders and refused to slice. Comments in the start code must never contain square brackets.

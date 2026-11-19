@@ -1,9 +1,10 @@
 ; Clean start for the Flashforge Adventurer 5M (stock firmware)
-; Tested 2026-11-19. Use exactly as written.
-; Only replace the two placeholders in [square brackets] with your slicer's names for:
-;   [bed_temperature_initial_layer_single] = bed temperature for the first layer
-;   [nozzle_temperature_initial_layer]     = nozzle temperature for the first layer
+; Use exactly as written. Only change the two temperature placeholders on the
+; M190 line (first-layer bed temperature) and the second M109 line (first-layer
+; nozzle temperature) to your slicer's own names for those values.
+; The placeholders below are OrcaSlicer's names; other slicers use other names.
 ; Delete your slicer's default start code before pasting this in.
+; Never put square brackets in comments: OrcaSlicer treats them as placeholders.
 ; Coordinates: X and Y run from -110 to +110, 0,0 is the centre, Y = -110 is the front edge.
 M104 S140 ; nozzle warm but below ooze temperature
 M190 S[bed_temperature_initial_layer_single] ; heat bed fully first

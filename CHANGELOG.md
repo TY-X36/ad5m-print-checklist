@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Start code would not slice in OrcaSlicer
+
+- Removed square brackets from the comments in `start-code.gcode`; the commands are unchanged.
+- Reason: OrcaSlicer treats any square-bracketed text, even in comments, as a placeholder and refused to slice the file as published.
+
 ## 2026-11-19 — Moisture Table covers every storage time
 
 - Added rows: PLA and Silk PLA left out less than 1 week, and PETG left out up to 3 days: print normally.
