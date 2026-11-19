@@ -2,6 +2,15 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Process lessons from the first day
+
+- Golden rules 4 (no defect is cosmetic) and 5 (stop after any failure until the root cause is fixed in the checklist).
+- Read PRINT-LOG.md before step 1; step 63 now adds a row to it. New PRINT-LOG.md with every print so far.
+- Sender looks at the cameras before asking the person; every question to the person must be yes/no or pick-one.
+- Step 30 checks every setting in the sliced file against the Material Table and the steps, not only the start.
+- New sections: Testing and improving (real prints under about 1 hour, one change at a time, issues closed only by a print), Doing it on this printer (practical notes for a new sender), Changing this checklist.
+- Reason: these process mistakes made problems last longer than the printer faults themselves.
+
 ## 2026-11-20 — Pressure advance 0.04 for PLA Basic
 
 - Material Table: new Pressure advance column; PLA Basic 0.04 from a pressure advance pattern test; other materials marked as not tested.

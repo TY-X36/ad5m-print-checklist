@@ -2,13 +2,15 @@
 
 Everyone who prints on this printer follows this list, every time: people, AI assistants, any computer, any slicer.
 
-## The three golden rules
+## The golden rules
 
 1. **Every step, every print.** This is a pre-flight checklist. Every single step below must be done again for every single print, even if the print before it was five minutes ago.
 2. **Nothing is assumed or carried over.** Answers, checks and confirmations from a previous print, an earlier conversation, a note, a memory or "what you were told last time" do not count. If a step asks a question, ask it again now. If a step asks for a check, check it again now.
 3. **Strictly in order.** Do the steps top to bottom. Never do a later step before an earlier one is finished, even if it seems harmless or faster. Example: never open the slicer before the filament is confirmed, because the filament decides the settings.
+4. **No defect is cosmetic.** Every blob, string, hook, gap, lifted corner or rough surface that anyone sees is written down in OPEN-ISSUES.md, with what it looked like and the settings in use. Small defects are early warnings of bigger failures.
+5. **Stop after any failure.** If a print fails or shows a new defect, the next print may only be one that helps find the cause. Normal printing resumes only when the root cause is written down and this checklist has been changed to prevent it. Writing the problem down is not the same as fixing it.
 
-Before step 1, read OPEN-ISSUES.md in this repository, so you know what is still being worked on and what to watch for.
+Before step 1, read OPEN-ISSUES.md and the last few rows of PRINT-LOG.md in this repository, so you know what is still being worked on and how recent prints went.
 
 If you find you did a step out of order, or relied on an old answer, go back to that step, redo it and everything after it, and discard anything prepared in between.
 
@@ -21,6 +23,10 @@ Each step says who does it:
 - **[BOTH]** — both must do it or agree on it.
 
 The sender runs the checklist. When a step is for the person at the printer, the sender asks about that one step only, waits for the answer, then moves to the next step. Never hand the person several steps at once. Always read the step number and wording from the current version of this checklist; never number or paraphrase steps from memory.
+
+Before asking the person anything that a camera can show (where a print failed, whether the first layer is stuck, what the plate looks like), the sender looks at the camera pictures or recording first, and asks only what the cameras cannot answer.
+
+Every question to the person at the printer must have a clear yes/no or pick-one answer that can be seen or checked on the spot. Never ask for a judgement call such as "does it feel dry?".
 
 Do not move to the next step until the current one is done. If a step cannot be done, stop and fix it or ask the owner first.
 
@@ -76,7 +82,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 27. **[SENDER]** Check every part touching the plate. Any part whose footprint is smaller than about 30 × 30 mm, or that is taller than it is wide, gets a brim about 4 mm wide. If the designer says no brim (for example a print-in-place model whose joints a brim would fuse), use small discs ("mouse ears") under the corners instead. Large parts with a big flat base need neither.
 28. **[SENDER]** Add supports only where the model truly needs them.
 29. **[SENDER]** Step through the slicer's layer preview from the first layer up, looking for gaps, floating parts or anything strange.
-30. **[SENDER]** Open the sliced file as text and check its start before sending: the first nozzle temperature command is 140 °C; `BED_MESH_CALIBRATE` appears after homing; and nothing heats the nozzle above 140 °C before the bed has been measured. If any check fails, fix the slicer settings and slice again.
+30. **[SENDER]** Open the sliced file as text and check it before sending. The start: the first nozzle temperature command is 140 °C; `BED_MESH_CALIBRATE` appears after homing; nothing heats the nozzle above 140 °C before the bed has been measured; the wipe back over the purge line is present. The settings, each against the Material Table and the steps above: nozzle and first-layer temperatures, bed temperature (the same for the first layer and the rest), pressure advance, brim where step 27 needs one, first-layer, wall, top-surface and travel speeds, skirt and seam. Do not trust the slicer's settings screen; check the file itself. If any check fails, fix the slicer settings and slice again.
 31. **[SENDER]** Note the estimated print time and filament weight, and tell the person at the printer.
 
 ## Stage 4 — Preparing the printer
@@ -124,7 +130,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 60. **[AT PRINTER]** Brush the nozzle once more while it is still warm.
 61. **[AT PRINTER]** Put opened filament back in a sealed bag with a desiccant pack.
 62. **[AT PRINTER]** Report how the print came out, with a photo of the parts if anything is wrong, and always for a test or calibration print.
-63. **[SENDER]** Write down what was printed, the material, the settings used, and the result.
+63. **[SENDER]** Add a row to PRINT-LOG.md: date, what was printed, filament, what changed since the last print, the result, and where the photos and recording are.
 64. **[BOTH]** If anything went wrong, find the cause together and add a new step to this checklist so it never happens again.
 
 ---
@@ -163,6 +169,33 @@ When a material is tested and better values are found, update this table.
 
 ---
 
+## Testing and improving
+
+- **Every print is a real object.** Tests are done through fun or useful prints of under about 1 hour, chosen together with the owner, that exercise whatever is being tested (small footprints, moving joints, overhangs, a new material). Pure calibration shapes are used only when nothing else can measure the value.
+- **One change at a time.** Change as few things as possible between prints, and record in PRINT-LOG.md exactly what changed, so a better or worse result can be traced to its cause.
+- **An open issue is closed only by a print.** A fix counts as proven only when a print made with it shows the problem is gone. Until then the issue stays in OPEN-ISSUES.md.
+
+---
+
+## Doing it on this printer (practical notes for a new sender)
+
+- **Finding the printer:** it is on the home Wi-Fi and calls itself "AD5M - read checklist first" in network discovery. Its address can change; search for it rather than relying on an old address. Its serial number is shown in its discovery reply and on its screen.
+- **Sending without the printer's own leveling:** OrcaSlicer's built-in "send to Flashforge" turned the printer's own leveling on in testing, which breaks step 14 (nozzle at or below 140 °C while the bed is measured). Send through the printer's network interface instead with "print now" on and "leveling before print" off, or, if starting from the printer's screen, untick leveling before pressing start.
+- **Cameras:** two phones watch the printer, one at the front and one at the side. A recorder on the home network records them while a print runs and shows a live view; the person at the printer can tell a new sender where to find it.
+- **OrcaSlicer quirk:** square brackets in start-code comments are read as placeholders and stop slicing.
+
+---
+
+## Changing this checklist
+
+- Get the latest version before editing; other people and agents also edit it.
+- Refer to other steps by their wording as well as their number, because numbers change when steps are added.
+- After editing, re-read the whole change before saving it: check step numbers, cross-references between steps, and that tables were not altered by accident.
+- Record every change in CHANGELOG.md with the reason, and move any finished item out of OPEN-ISSUES.md only when a print has proven it.
+- Keep it plain English, with nothing tied to one computer, one AI or one slicer, except in the practical notes above.
+
+---
+
 ## Lessons learned (why these rules exist)
 
 - Early prints failed because the printer heated to full temperature, oozed, then pressed the oozing nozzle onto the plate to measure it. The ooze smeared the tip and spoiled the bed measurement, so the first layers came out wrong.
@@ -182,3 +215,4 @@ When a material is tested and better values are found, update this table.
 - During a print the sender only watched the printer's status, which cannot see what is on the plate, and looked at the cameras only when asked. The camera check is now a fixed 5-minute interval.
 - A flow calibration plate was ruined at layer 8 of 10: on camera, a small tile lifted at one edge, the nozzle picked up a blob from it and dragged several tiles across the plate. Causes found: the bed dropped from 55 to 50 °C after the first layer, the small tiles had no brim, and top layers were printed at 200 mm per second. That is why the bed now stays at one temperature, small parts always get a brim, and small parts are printed more slowly.
 - Pressure advance was left at the slicer's default (0.025), and every part had a blob where each line started. A pressure advance test showed the blobs disappear from about 0.035 upward; 0.04 is now in the Material Table.
+- During the first day, defects were called cosmetic, failures were written down and then printing continued, the camera was looked at only when asked, and several things were changed in one print. Each made problems last longer. That is why there are now golden rules 4 and 5, the camera-first and yes/no rules, the full file check in step 30, and the testing rules.
