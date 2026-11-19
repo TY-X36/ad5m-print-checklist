@@ -2,6 +2,13 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Lessons from the first PETG run
+
+- Filament step now says to load the agreed filament if it is not already in the printer.
+- Glue stick step: cover everything the print and purge touch; colour-changing glue helps confirm it.
+- Practical notes: never move filament below printing temperature (error E0006); homing does not touch the plate; how to clean the nozzle without hands (purge and wipe in a corner); move things towards the camera to see them clearly.
+- Reason: all four came up during the first PETG run.
+
 ## 2026-11-20 — Split printing from improving
 
 - README.md now holds only what a person or agent needs to print. Testing changes, editing rules and the lessons learned moved to the new IMPROVING.md, with a short procedure for handling a failed print. Golden rule 5 and the last step point to it.
