@@ -117,13 +117,14 @@ Do not move to the next step until the current one is done. If a step cannot be 
 ## Stage 8 — After the print
 
 55. **[SENDER]** As soon as the print finishes, is stopped or fails, stop the recording and mark it: finished OK, failed if anything went wrong, or cancelled if it was stopped for another reason. Never leave a recording running after the print. If a print marked OK turns out bad later, mark its recording failed within 24 hours so it is kept.
-56. **[AT PRINTER]** Let the plate cool for a few minutes, then flex it to release the print. Never use a scraper on the plate surface.
-57. **[AT PRINTER]** Clear the purge line, skirt and leftover strings off the plate.
-58. **[AT PRINTER]** Brush the nozzle once more while it is still warm.
-59. **[AT PRINTER]** Put opened filament back in a sealed bag with a desiccant pack.
-60. **[AT PRINTER]** Report how the print came out, with a photo if anything is wrong.
-61. **[SENDER]** Write down what was printed, the material, the settings used, and the result.
-62. **[BOTH]** If anything went wrong, find the cause together and add a new step to this checklist so it never happens again.
+56. **[SENDER]** Before anything is taken off the plate, take a picture of the finished print from the cameras and keep it with the print record. If the print is a test or calibration whose result still has to be read, tell the person at the printer to keep every part, and not throw anything away, until the result has been read and written into this checklist.
+57. **[AT PRINTER]** Let the plate cool for a few minutes, then flex it to release the print. Never use a scraper on the plate surface.
+58. **[AT PRINTER]** Clear the purge line, skirt and leftover strings off the plate.
+59. **[AT PRINTER]** Brush the nozzle once more while it is still warm.
+60. **[AT PRINTER]** Put opened filament back in a sealed bag with a desiccant pack.
+61. **[AT PRINTER]** Report how the print came out, with a photo of the parts if anything is wrong, and always for a test or calibration print.
+62. **[SENDER]** Write down what was printed, the material, the settings used, and the result.
+63. **[BOTH]** If anything went wrong, find the cause together and add a new step to this checklist so it never happens again.
 
 ---
 
@@ -168,3 +169,4 @@ When a material is tested and better values are found, update this table.
 - During a checklist run the sender labelled steps with the wrong numbers because it numbered them from memory after the checklist had changed. Step numbers and wording must always be read from the current checklist.
 - A tiny string formed while cleaning PLA at 170 °C, so the PLA cleaning temperature was lowered to 160 °C.
 - The start code once ended by wiping onward onto bare plate. The ooze string had nothing to stick to, curled up and wrapped onto the outside of the nozzle on the way to the print. The wipe now goes backwards over the fresh purge line and lifts higher.
+- The parts of a flow calibration print were removed and lost before their result was read, so the whole test had to be repeated. A picture is now taken before anything leaves the plate, and test parts are kept until their result is written down.
