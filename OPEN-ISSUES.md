@@ -29,3 +29,8 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Seen (overnight print, 2026-11-20 02:17):** about 20 minutes into the print the printer stopped answering on the network (no ping, no status, no API), while the camera showed it still printing from its own storage.
 - **Impact:** status-based watching, pausing over the network and the finish notification stop working; only the cameras still work.
 - **Next step:** check whether the printer comes back by itself; consider a fixed address and a stronger Wi-Fi signal near the printer, and check the printer's power-saving or Wi-Fi settings. Watching by camera must not depend on the printer's network.
+
+## 6. Push-on fits come out too loose
+- **Seen (overnight black PETG print, 2026-11-20):** the spinner caps were designed with a hole 0.2 mm wider than the 8 mm peg they press onto. They slide on and fall straight off; there is no grip at all.
+- **Lesson so far:** a hole made bigger than the peg gives a sliding fit, not a push-on fit. A part meant to stay on needs a hole the same size as the peg or slightly smaller.
+- **Next step:** check whether the gear fidget's caps (hole exactly the size of its 5 mm peg) grip. Reprint the spinner caps with a smaller hole, find the size that pushes on firmly by hand and stays, and record the working sizes for each material in the checklist's practical notes.
