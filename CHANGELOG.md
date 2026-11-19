@@ -2,6 +2,15 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Start code made reproducible for any sender
+
+- Added `start-code.gcode`: the tested clean-start sequence. Step 13 says to paste it in exactly, changing only the two temperature placeholders.
+- Steps 14–20 now describe the start code precisely (temperatures, positions, heights, amounts), so it can be rebuilt if the file is unavailable.
+- New step 29: open the sliced file and verify the start before sending.
+- New step 6: never re-print a stored file unless it was prepared with this checklist.
+- Rules section: plate coordinates, the bed-measuring command, and where the start code lives.
+- Reason: plain-English steps alone let different agents build different start sequences; the printer's firmware cannot hold the routine (community firmware does not support this printer version yet).
+
 ## 2026-11-19 — First published version
 
 - Three golden rules: every step every print, nothing assumed or carried over, strictly in order.
