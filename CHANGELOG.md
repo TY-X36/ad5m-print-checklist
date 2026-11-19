@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Watcher stays quiet until plastic flows
+
+- Step 54: an automatic watcher must not pause or alarm before plastic starts coming out.
+- Reason: on the silk fractal star print the watcher read the empty plate during the bed check as a missing print and paused it twice in a row. No harm done, but the print had to be restarted.
+
 ## 2026-11-20 — Phone lights on for every print
 
 - Background notes: the recorder now switches both phone lights on when a recording starts, keeps them on, and switches them off when it stops. Step 54 ("For the whole print, keep the cameras watched continuously"): both lights should be on for the whole print.
