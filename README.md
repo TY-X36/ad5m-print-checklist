@@ -28,7 +28,8 @@ Do not move to the next step until the current one is done. If a step cannot be 
 
 ## Rules to know before starting
 
-- This is a Flashforge Adventurer 5M: one 0.4 mm nozzle, 220 × 220 × 220 mm build area, no camera, no automatic colour changer.
+- This is a Flashforge Adventurer 5M: one 0.4 mm nozzle, 220 × 220 × 220 mm build area, no built-in camera, no automatic colour changer.
+- Two phones watch the printer: phone 1 at the front and phone 2 at the side. A recorder on the home network records them, but only while a print is running. Its page is http://192.168.68.10:8790 on the home network: it shows both cameras live, has buttons to start and stop recording and to switch each phone's light on or off or refocus it, and lists past recordings. The same live view is on the Home Assistant dashboard, in the "3D Printer" tab. Recordings are kept for 24 hours; a recording marked "failed" is kept until someone deletes it.
 - It measures the bed by pressing the nozzle itself onto the plate, so anything stuck to the nozzle ruins the measurement and the first layer.
 - A hot nozzle leaks plastic ("ooze"). Ooze on the nozzle during homing or bed measuring is the number one cause of failed prints on this printer.
 - The nozzle must never be above 140 °C while the printer homes or measures the bed.
@@ -51,7 +52,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 
 7. **[SENDER]** Ask the person at the printer exactly which filament is loaded: material, brand and colour. Ask fresh for every print; never assume it is the same as last time. Do not open the slicer until this is answered.
 8. **[AT PRINTER]** Report the loaded filament, and whether there is clearly enough left on the spool for the job.
-9. **[AT PRINTER]** Report how this spool has been stored since it was last used, and for how long: sealed in a bag with a desiccant pack, or left out in the open. Use the Moisture Table at the bottom of this list to decide whether it can be printed as-is, printed with damp-filament adjustments, or must be dried first. The definite dryness test comes later, when the purge line prints (step 48).
+9. **[AT PRINTER]** Report how this spool has been stored since it was last used, and for how long: sealed in a bag with a desiccant pack, or left out in the open. Use the Moisture Table at the bottom of this list to decide whether it can be printed as-is, printed with damp-filament adjustments, or must be dried first. The definite dryness test comes later, when the purge line prints (step 49).
 10. **[BOTH]** Agree on the material and colour before any settings are chosen.
 
 ## Stage 3 — Preparing the file
@@ -97,30 +98,32 @@ Do not move to the next step until the current one is done. If a step cannot be 
 
 44. **[SENDER]** Do not send anything until you have received "plate clear, nozzle clean, filament confirmed" for this print.
 45. **[SENDER]** Check the printer is idle and ready, with no other job running or paused.
-46. **[SENDER]** Send the print and tell the person at the printer it is starting.
+46. **[SENDER]** Start the recording on the recorder, giving the model's name and the estimated print time from step 30. Check that it now says it is recording and that both camera pictures show the printer. As a safety net it stops by itself one hour after the estimated time, so use the real estimate. If the recorder cannot be reached, tell the person at the printer and agree whether to print without a recording.
+47. **[SENDER]** Send the print and tell the person at the printer it is starting.
 
 ## Stage 6 — Watching the start
 
-47. **[AT PRINTER]** While it heats and homes, check the nozzle stays at or below 140 °C while it homes and measures the bed, and only heats up once it is raised next to the purge area. If it heats to full temperature early, stop the print and tell the sender.
-48. **[AT PRINTER]** Watch the purge line: it should be smooth, unbroken and the right colour. This is also the dryness check: if the plastic pops, crackles, steams or bubbles, stop the print and dry the spool before trying again.
-49. **[AT PRINTER]** Watch the skirt and the entire first layer, about the first three to five minutes.
-50. **[AT PRINTER]** A good first layer is flat, slightly squashed, with lines touching each other and stuck firmly to the plate.
-51. **[AT PRINTER]** Stop the print immediately if anything lifts, curls, drags, gets knocked loose, piles up in a lump, or the nozzle picks up a blob, then tell the sender what you saw.
+48. **[AT PRINTER]** While it heats and homes, check the nozzle stays at or below 140 °C while it homes and measures the bed, and only heats up once it is raised next to the purge area. If it heats to full temperature early, stop the print and tell the sender.
+49. **[AT PRINTER]** Watch the purge line: it should be smooth, unbroken and the right colour. This is also the dryness check: if the plastic pops, crackles, steams or bubbles, stop the print and dry the spool before trying again.
+50. **[AT PRINTER]** Watch the skirt and the entire first layer, about the first three to five minutes.
+51. **[AT PRINTER]** A good first layer is flat, slightly squashed, with lines touching each other and stuck firmly to the plate.
+52. **[AT PRINTER]** Stop the print immediately if anything lifts, curls, drags, gets knocked loose, piles up in a lump, or the nozzle picks up a blob, then tell the sender what you saw. The sender then goes straight to step 55 and stops the recording, marked failed.
 
 ## Stage 7 — During the print
 
-52. **[SENDER]** If you can see the printer's status remotely, check it regularly and alert the person at the printer if it pauses, shows an error or the temperatures look wrong.
-53. **[AT PRINTER]** Check on the print every so often; someone must be reachable until it finishes.
+53. **[SENDER]** Check the printer's status and both camera pictures regularly. If a picture is too dark or blurry to judge the print, switch that phone's light on or refocus it; which light and focus settings work best is still being tested, so note what helped in the print record (step 61). Alert the person at the printer if the print pauses, shows an error, the temperatures look wrong, or the pictures show anything lifting, stringing into a tangle or knocked loose.
+54. **[AT PRINTER]** Check on the print every so often; someone must be reachable until it finishes.
 
 ## Stage 8 — After the print
 
-54. **[AT PRINTER]** Let the plate cool for a few minutes, then flex it to release the print. Never use a scraper on the plate surface.
-55. **[AT PRINTER]** Clear the purge line, skirt and leftover strings off the plate.
-56. **[AT PRINTER]** Brush the nozzle once more while it is still warm.
-57. **[AT PRINTER]** Put opened filament back in a sealed bag with a desiccant pack.
-58. **[AT PRINTER]** Report how the print came out, with a photo if anything is wrong.
-59. **[SENDER]** Write down what was printed, the material, the settings used, and the result.
-60. **[BOTH]** If anything went wrong, find the cause together and add a new step to this checklist so it never happens again.
+55. **[SENDER]** As soon as the print finishes, is stopped or fails, stop the recording and mark it: finished OK, failed if anything went wrong, or cancelled if it was stopped for another reason. Never leave a recording running after the print. If a print marked OK turns out bad later, mark its recording failed within 24 hours so it is kept.
+56. **[AT PRINTER]** Let the plate cool for a few minutes, then flex it to release the print. Never use a scraper on the plate surface.
+57. **[AT PRINTER]** Clear the purge line, skirt and leftover strings off the plate.
+58. **[AT PRINTER]** Brush the nozzle once more while it is still warm.
+59. **[AT PRINTER]** Put opened filament back in a sealed bag with a desiccant pack.
+60. **[AT PRINTER]** Report how the print came out, with a photo if anything is wrong.
+61. **[SENDER]** Write down what was printed, the material, the settings used, and the result.
+62. **[BOTH]** If anything went wrong, find the cause together and add a new step to this checklist so it never happens again.
 
 ---
 
@@ -144,7 +147,7 @@ When a material is tested and better values are found, update this table.
 | PLA or Silk PLA | Left out 1 to 4 weeks | "Lightly damp": print with damp-filament adjustments (below). |
 | PLA or Silk PLA | Left out more than 4 weeks | Dry before printing. |
 | PETG | Left out more than 3 days | Dry before printing. |
-| Any | Pops, crackles, steams or bubbles on the purge line (step 48) | Dry before printing, no matter how it was stored. |
+| Any | Pops, crackles, steams or bubbles on the purge line (step 49) | Dry before printing, no matter how it was stored. |
 
 **Damp-filament adjustments:** lower the nozzle temperature by about 5 °C, increase retraction by about 0.2 mm, and turn on "avoid crossing walls" (or the slicer's equivalent) so travel moves stay over the part. These reduce stringing and ooze but do not remove the moisture.
 

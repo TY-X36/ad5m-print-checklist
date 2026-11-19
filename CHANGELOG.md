@@ -2,6 +2,15 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Cameras and print recording
+
+- Rules section: two phones now watch the printer, and a recorder on the home network records them only while a print runs (kept 24 hours; recordings marked failed are kept until deleted). Its page shows both cameras live and has buttons to start and stop recording, switch the phone lights and refocus.
+- New step 46: start the recording before sending, with the estimated print time (it stops by itself one hour after the estimate as a safety net).
+- New step 55: stop the recording as soon as the print ends, marked finished OK, failed or cancelled. Step 52 (stopping a bad first layer) now points to it.
+- Step 53: the sender checks the camera pictures as well as the printer status, and may switch the phone lights on or refocus to see better; the best settings are still being tested.
+- Steps from the old 46 onward are renumbered (+1, and +2 from the old 54); the purge-line dryness check is now step 49.
+- Reason: when a print fails, there should be a video of how it failed, without recording an idle printer.
+
 ## 2026-11-19 — Open issues list
 
 - Added OPEN-ISSUES.md and a rule to read it before step 1. Reason: problems seen during a print must not be forgotten before they are fixed.
