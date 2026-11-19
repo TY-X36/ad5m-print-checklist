@@ -111,7 +111,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 
 ## Stage 7 — During the print
 
-53. **[SENDER]** Check the printer's status and both camera pictures regularly. If a picture is too dark or blurry to judge the print, switch that phone's light on or refocus it; which light and focus settings work best is still being tested, so note what helped in the print record (step 62). Alert the person at the printer if the print pauses, shows an error, the temperatures look wrong, or the pictures show anything lifting, stringing into a tangle or knocked loose.
+53. **[SENDER]** For the whole print, at least every 5 minutes, take fresh pictures from both cameras and actually look at them, as well as checking the printer's status. Watching the printer's status alone does not count: it cannot see spaghetti, lifting parts or blobs. If a picture is too dark or blurry to judge the print, switch that phone's light on or refocus it; which light and focus settings work best is still being tested, so note what helped in the print record (step 62). Alert the person at the printer if the print pauses, shows an error, the temperatures look wrong, or the pictures show anything lifting, stringing into a tangle or knocked loose.
 54. **[AT PRINTER]** Check on the print every so often; someone must be reachable until it finishes.
 
 ## Stage 8 — After the print
@@ -174,3 +174,4 @@ When a material is tested and better values are found, update this table.
 - The parts of a flow calibration print were removed and lost before their result was read, so the whole test had to be repeated. A picture is now taken before anything leaves the plate, and test parts are kept until their result is written down.
 - The Moisture Table once had no row for PLA left out for less than a week, so a spool left out for two days could not be classified. Every storage time now has a row.
 - The start code file once had square brackets inside its instruction comments. OrcaSlicer read them as placeholders and refused to slice. Comments in the start code must never contain square brackets.
+- During a print the sender only watched the printer's status, which cannot see what is on the plate, and looked at the cameras only when asked. The camera check is now a fixed 5-minute interval.

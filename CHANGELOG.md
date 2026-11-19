@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Camera checks every 5 minutes
+
+- Step 53: look at both camera pictures at least every 5 minutes for the whole print; status alone does not count.
+- Reason: "regularly" was too vague, and only the printer's status was being watched.
+
 ## 2026-11-19 — Seam blobs described in detail
 
 - Open issue 1 updated with run 4 evidence: a blob at the seam corner of every part, with the exact settings in use and the order of fixes to test.
