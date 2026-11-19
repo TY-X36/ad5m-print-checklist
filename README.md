@@ -63,7 +63,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 17. **[SENDER]** Before heating to printing temperature, the start code pulls the filament back 1.5 mm, then heats the nozzle while it is still raised.
 18. **[SENDER]** The start code never lowers the nozzle straight down where it was heated. It comes down at an angle to the start of the purge line (X = 95, Y = -110, height 0.3 mm), so any drip is left on the plate instead of being pushed onto the nozzle, then pushes the filament forward the same 1.5 mm.
 19. **[SENDER]** The start code draws two purge lines along the front edge (Y = -110 and Y = -109.6, from X = 95 to X = -55, then back to X = 55), long enough that plastic flows smoothly and in the correct colour.
-20. **[SENDER]** Right after the purge lines, the start code pulls the filament back 0.8 mm and wipes sideways quickly (20 mm at high speed) so any ooze string snaps off, then lifts 1 mm.
+20. **[SENDER]** Right after the purge lines, the start code pulls the filament back 0.8 mm, wipes quickly backwards over the purge line it just drew (20 mm, from X = 55 to X = 35) so any ooze string sticks to that plastic, then lifts 2 mm before travelling to the print. It must never wipe onward onto bare plate.
 21. **[SENDER]** Add a skirt of at least three loops, a few millimetres from the model, so the nozzle is flowing cleanly before it reaches the model.
 22. **[SENDER]** Print the first layer slowly, about 30 mm per second.
 23. **[SENDER]** Cap travel moves at about 250 mm per second, so small parts do not get knocked loose.
@@ -162,3 +162,4 @@ When a material is tested and better values are found, update this table.
 - When the printer's built-in leveling was switched off and nothing else measured the bed, the first layer came out uneven: almost see-through in places and normal in others. The bed must still be measured every print, just with a clean nozzle at or below 140 °C.
 - During a checklist run the sender labelled steps with the wrong numbers because it numbered them from memory after the checklist had changed. Step numbers and wording must always be read from the current checklist.
 - A tiny string formed while cleaning PLA at 170 °C, so the PLA cleaning temperature was lowered to 160 °C.
+- The start code once ended by wiping onward onto bare plate. The ooze string had nothing to stick to, curled up and wrapped onto the outside of the nozzle on the way to the print. The wipe now goes backwards over the fresh purge line and lifts higher.

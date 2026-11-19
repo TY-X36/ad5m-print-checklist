@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Wipe over the purge line, not onto bare plate
+
+- `start-code.gcode` and step 20: after the purge lines, wipe backwards over the purge line (X 55 to 35), then lift 2 mm (was: wipe onward to X 75 onto bare plate, lift 1 mm).
+- Reason: a small curl of filament between the purge line and the print got onto the outside of the nozzle. Not yet proven by a print; to be confirmed on the next run.
+
 ## 2026-11-19 — Lessons from the third checklist run
 
 - Nozzle cleaning: a thickly folded paper towel is allowed when there is no brass brush. Reason: no brush was available.

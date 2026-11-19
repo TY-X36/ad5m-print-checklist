@@ -23,6 +23,6 @@ G1 X-55 E10 F2400 ; purge line
 G1 Y-109.6 F2400
 G1 X55 E6 F2400 ; second purge line
 G1 E-0.8 F2100 ; retract
-G1 X75 F12000 ; fast sideways wipe snaps off any string
-G1 Z1 F3000
+G1 X35 F12000 ; fast wipe backwards over the purge line just drawn, so any string sticks to it
+G1 Z2 F3000 ; lift clear before travelling to the print
 G92 E0
