@@ -111,7 +111,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 
 ## Stage 7 — During the print
 
-53. **[SENDER]** Check the printer's status and both camera pictures regularly. If a picture is too dark or blurry to judge the print, switch that phone's light on or refocus it; which light and focus settings work best is still being tested, so note what helped in the print record (step 61). Alert the person at the printer if the print pauses, shows an error, the temperatures look wrong, or the pictures show anything lifting, stringing into a tangle or knocked loose.
+53. **[SENDER]** Check the printer's status and both camera pictures regularly. If a picture is too dark or blurry to judge the print, switch that phone's light on or refocus it; which light and focus settings work best is still being tested, so note what helped in the print record (step 62). Alert the person at the printer if the print pauses, shows an error, the temperatures look wrong, or the pictures show anything lifting, stringing into a tangle or knocked loose.
 54. **[AT PRINTER]** Check on the print every so often; someone must be reachable until it finishes.
 
 ## Stage 8 — After the print
