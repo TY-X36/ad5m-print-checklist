@@ -7,10 +7,10 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Likely causes, most likely first:** pressure advance not tuned for this printer; the nozzle lifting and lowering for travel moves (z-hop); slightly damp filament; retraction amount or priming speed.
 - **Next step:** run a pressure advance calibration print for the loaded filament and record the result in the Material Table. If nubs remain, run a retraction calibration.
 
-## 2. Curl of filament onto the nozzle between the purge line and the print
-- **Seen:** a small curl got onto the outside of the nozzle after the purge line, on the way to the print.
-- **Change made:** the wipe now goes backwards over the purge line and lifts 2 mm (start code and step 20).
-- **Next step:** confirm on the next print that no curl reaches the nozzle. If it is gone, delete this item.
+## 2. Ooze string while heating lands at the start of the purge line
+- **Seen (run 4, on camera):** while the nozzle heats to printing temperature (raised, front right), a thin string still oozes out despite the 1.5 mm pull-back. When the nozzle comes down it is laid as a small curl at the start of the purge line that does not stick for a moment.
+- **Confirmed fixed:** the backwards wipe over the purge line keeps the nozzle clean; no curl reached the nozzle or the print.
+- **Next step:** test a larger pull-back before heating (about 2.5 mm, pushed back by the same amount before the purge). Only change the start code if the curl gets smaller and nothing else gets worse.
 
 ## 3. Bed measuring takes about 3 minutes every print
 - **Seen:** measuring the whole bed at every print is reliable but slow.

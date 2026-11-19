@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Run 4 observations
+
+- Confirmed: wiping backwards over the purge line keeps the nozzle clean on the way to the print.
+- Open issue 2 updated: an ooze string still forms while heating and lands as a curl at the start of the purge line; a larger pull-back is the next test.
+
 ## 2026-11-19 — Start code would not slice in OrcaSlicer
 
 - Removed square brackets from the comments in `start-code.gcode`; the commands are unchanged.
