@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Pressure advance 0.04 for PLA Basic
+
+- Material Table: new Pressure advance column; PLA Basic 0.04 from a pressure advance pattern test; other materials marked as not tested.
+- Rule: use the table value every print; untested materials need a pressure advance test first.
+- Reason: the default 0.025 left a blob at the start of every line.
+
 ## 2026-11-20 — Root cause of parts knocked loose, and three fixes
 
 - Bed temperature held for the whole print (Material Table and rule under it).

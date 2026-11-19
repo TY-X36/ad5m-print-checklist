@@ -131,11 +131,13 @@ Do not move to the next step until the current one is done. If a step cannot be 
 
 ## Material Table (starting values for this printer)
 
-| Material | Nozzle | First layer nozzle | Cleaning temp | Bed (whole print) | Part cooling fan | Notes |
-|---|---|---|---|---|---|---|
-| PLA (basic) | 205–210 °C | 215 °C | 160 °C (170 °C if residue will not soften) | 55 °C | Full | Default choice; best for small or detailed parts. |
-| Silk PLA | 210–215 °C | 220 °C | 160 °C (170 °C if residue will not soften) | 55 °C | Full | Print slower; shiny but weaker; expect some stringing. |
-| PETG | 235–240 °C | 240 °C | 190 °C | 75 °C | 30–50% | Glue stick on the plate; strong and heat-resistant. |
+| Material | Nozzle | First layer nozzle | Cleaning temp | Bed (whole print) | Part cooling fan | Pressure advance | Notes |
+|---|---|---|---|---|---|---|---|
+| PLA (basic) | 205–210 °C | 215 °C | 160 °C (170 °C if residue will not soften) | 55 °C | Full | 0.04 (tested on PLA Basic, 2026-11-20) | Default choice; best for small or detailed parts. |
+| Silk PLA | 210–215 °C | 220 °C | 160 °C (170 °C if residue will not soften) | 55 °C | Full | Not tested: run a pressure advance test first | Print slower; shiny but weaker; expect some stringing. |
+| PETG | 235–240 °C | 240 °C | 190 °C | 75 °C | 30–50% | Not tested: run a pressure advance test first | Glue stick on the plate; strong and heat-resistant. |
+
+Use the pressure advance value from this table for every print; without it, every line starts with a blob. A material with no tested value must have a pressure advance test before its first real print.
 
 Keep the bed at the same temperature for the whole print. Do not let the slicer lower it after the first layer: parts lose grip exactly when they are tallest.
 
@@ -149,10 +151,10 @@ When a material is tested and better values are found, update this table.
 |---|---|---|
 | Any | Sealed in a bag with desiccant | Print normally. |
 | PLA or Silk PLA | Left out less than 1 week | Print normally. |
-| PETG | Left out up to 3 days | Print normally. |
+| PETG | Left out up to 3 days | Print normally. | | Not tested: run a pressure advance test first
 | PLA or Silk PLA | Left out 1 to 4 weeks | "Lightly damp": print with damp-filament adjustments (below). |
 | PLA or Silk PLA | Left out more than 4 weeks | Dry before printing. |
-| PETG | Left out more than 3 days | Dry before printing. |
+| PETG | Left out more than 3 days | Dry before printing. | | Not tested: run a pressure advance test first
 | Any | Pops, crackles, steams or bubbles on the purge line (step 50) | Dry before printing, no matter how it was stored. |
 
 **Damp-filament adjustments:** lower the nozzle temperature by about 5 °C, increase retraction by about 0.2 mm, and turn on "avoid crossing walls" (or the slicer's equivalent) so travel moves stay over the part. These reduce stringing and ooze but do not remove the moisture.
@@ -179,3 +181,4 @@ When a material is tested and better values are found, update this table.
 - The start code file once had square brackets inside its instruction comments. OrcaSlicer read them as placeholders and refused to slice. Comments in the start code must never contain square brackets.
 - During a print the sender only watched the printer's status, which cannot see what is on the plate, and looked at the cameras only when asked. The camera check is now a fixed 5-minute interval.
 - A flow calibration plate was ruined at layer 8 of 10: on camera, a small tile lifted at one edge, the nozzle picked up a blob from it and dragged several tiles across the plate. Causes found: the bed dropped from 55 to 50 °C after the first layer, the small tiles had no brim, and top layers were printed at 200 mm per second. That is why the bed now stays at one temperature, small parts always get a brim, and small parts are printed more slowly.
+- Pressure advance was left at the slicer's default (0.025), and every part had a blob where each line started. A pressure advance test showed the blobs disappear from about 0.035 upward; 0.04 is now in the Material Table.
