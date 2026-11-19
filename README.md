@@ -8,6 +8,8 @@ Everyone who prints on this printer follows this list, every time: people, AI as
 2. **Nothing is assumed or carried over.** Answers, checks and confirmations from a previous print, an earlier conversation, a note, a memory or "what you were told last time" do not count. If a step asks a question, ask it again now. If a step asks for a check, check it again now.
 3. **Strictly in order.** Do the steps top to bottom. Never do a later step before an earlier one is finished, even if it seems harmless or faster. Example: never open the slicer before the filament is confirmed, because the filament decides the settings.
 
+Before step 1, read OPEN-ISSUES.md in this repository, so you know what is still being worked on and what to watch for.
+
 If you find you did a step out of order, or relied on an old answer, go back to that step, redo it and everything after it, and discard anything prepared in between.
 
 ---

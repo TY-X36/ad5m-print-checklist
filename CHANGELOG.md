@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Open issues list
+
+- Added OPEN-ISSUES.md and a rule to read it before step 1. Reason: problems seen during a print must not be forgotten before they are fixed.
+- Confirmed on the third run: measuring the bed at 140 °C at the start of the print gave a flat, even first layer (the earlier see-through skirt is fixed).
+
 ## 2026-11-19 — Wipe over the purge line, not onto bare plate
 
 - `start-code.gcode` and step 20: after the purge lines, wipe backwards over the purge line (X 55 to 35), then lift 2 mm (was: wipe onward to X 75 onto bare plate, lift 1 mm).
