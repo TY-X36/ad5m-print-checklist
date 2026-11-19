@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Continuous camera watching
+
+- Camera-watching step: an automatic watcher looks at the camera about every 10 seconds and alerts the sender immediately; every 5 minutes by the sender is now only the fallback.
+- Reason: problems (lifting parts, blobs) grow in seconds; a 5-minute gap is too long. First used on the black PETG pressure advance test.
+
 ## 2026-11-20 — Lessons from the first PETG run
 
 - Filament step now says to load the agreed filament if it is not already in the printer.
