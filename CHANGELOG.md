@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Quick bed measurement
+
+- Start code: `BED_MESH_CALIBRATE PROBE_COUNT=3,3` (9 points, about half a minute) instead of the full grid (about 3 minutes).
+- Reason: the full grid was slow for a 220 mm bed. Not yet proven; tracked in open issue 3.
+
 ## 2026-11-20 — Command-line slicing and print time
 
 - Practical notes: OrcaSlicer's command line ignores the plate type (wrong bed temperature) and can let the skirt or brim run off the bed; check the file's extents. Print time is limited by the hotend's melt rate, not the speed button.

@@ -14,9 +14,10 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Confirmed fixed:** the backwards wipe over the purge line keeps the nozzle clean; no curl reached the nozzle or the print.
 - **Next step:** test a larger pull-back before heating (about 2.5 mm, pushed back by the same amount before the purge). Only change the start code if the curl gets smaller and nothing else gets worse.
 
-## 3. Bed measuring takes about 3 minutes every print
+## 3. Bed measuring takes about 3 minutes every print (changed, to confirm)
 - **Seen:** measuring the whole bed at every print is reliable but slow.
-- **Next step:** test measuring only the area under the model (adaptive bed measuring) with a no-print test. Only change the checklist if it works.
+- **Change made (2026-11-20):** start code now measures a 3 × 3 grid instead of the full grid, at the owner's request.
+- **Next step:** confirm on the next print that it takes well under a minute and the first layer is still even across the whole plate. If corners come out thin or thick, try a 4 × 4 grid.
 
 ## 4. Parts knocked loose near the top of a print
 - **Root cause (run 4, from the camera recording, 1 frame per second):** a small front tile lifted at one edge while its top layers were printing; the nozzle then picked up a blob from it and dragged several tiles across the plate.
