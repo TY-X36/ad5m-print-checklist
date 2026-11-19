@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Every file has a thumbnail
+
+- File check (step 30) now requires a 140 × 110 preview picture; practical note explains how to add one when slicing from the command line.
+- Reason: the overnight print was sliced from the command line and showed no picture on the printer's screen.
+
 ## 2026-11-20 — Quick bed measurement
 
 - Start code: `BED_MESH_CALIBRATE PROBE_COUNT=3,3` (9 points, about half a minute) instead of the full grid (about 3 minutes).
