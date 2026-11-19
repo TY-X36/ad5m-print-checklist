@@ -2,6 +2,10 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-19 — Seam blobs described in detail
+
+- Open issue 1 updated with run 4 evidence: a blob at the seam corner of every part, with the exact settings in use and the order of fixes to test.
+
 ## 2026-11-19 — Run 4 observations
 
 - Confirmed: wiping backwards over the purge line keeps the nozzle clean on the way to the print.
