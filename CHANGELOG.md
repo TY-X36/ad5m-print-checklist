@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — No skirt
+
+- Step 21 ("Do not add a skirt") replaces the rule to add a skirt of at least three loops. Steps 30 (file check), 51 (watch the first layer) and 59 (clear the plate) and the OrcaSlicer note no longer mention a skirt.
+- Reason: the owner asked why every print has a border around it and decided it is not needed. The two purge lines and the backwards wipe in the start code (steps 19 and 20) already get the plastic flowing cleanly; the skirt was added before they existed.
+- Check on the next print without a skirt that the first lines of the model come out full and clean. If they start thin or blobby, put a one-loop skirt back and note it here.
+
 ## 2026-11-20 — Filament list in the checklist
 
 - New file FILAMENTS.md: every spool on hand, with the Material Table row to use, brand, colour, the box's temperature and drying values, and whether it is opened. Linked from "Rules to know before starting" and IMPROVING.md; step 61 ("Put opened filament back in a sealed bag") now also says to update it when a spool is first opened or used up.
