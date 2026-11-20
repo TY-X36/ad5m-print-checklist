@@ -35,3 +35,11 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Lesson so far:** a hole made bigger than the peg gives a sliding fit, not a push-on fit. A part meant to stay on needs a hole the same size as the peg or slightly smaller.
 - **Gear fidget caps (same print):** hole exactly the size of the 5 mm peg; they push on firmly and stay.
 - **Next step:** reprint the spinner caps with a smaller hole, find the size that pushes on firmly by hand and stays, and record the working sizes for each material in the checklist's practical notes.
+
+## 7. Print-in-place dragon: small parts knocked loose in the first layers
+- **Seen (2026-11-20, Glorious Baby Dragon at 1.2×, neon green PLA, 0.28 mm layers):** from about 19:21 (layer 4 to 7) small pieces were knocked off and dragged outside the model, first at the left, then a tangle at the back right. Owner saw it and paused; cancelled at 9 %. Photos: `prints/records/glorious_dragon_failed_phone1.jpg` and `glorious_dragon_failed_timeline.jpg` in the project folder.
+- **Causes found in the sliced file:** only the outer walls were slowed; inner walls ran at 300 mm/s, infill at 270, gap fill at 200, acceleration 10 000 mm/s². Hundreds of tiny feet, claws and segment bottoms touch the plate and none had a brim or mouse ears. The bed went from 55 °C (first layer) to 60 °C after it, because the filament preset had no bed temperature for the plate type the command line uses. The checklist was skipped at the owner's request, so steps 24 and 27 were not checked.
+- **Why it was not stopped automatically:** the camera watcher said PROBLEM several times, including twice in a row at 19:29, but each answer began with "OK," and the script read only the first verdict word. The sender also stopped looking at the camera after the first layer and left it to the watcher.
+- **Changes made:** step 24 now slows every speed (walls, infill, gap fill, top) to about 100 mm/s and acceleration to about 4000 for small parts and print-in-place models; step 54 now says any answer mentioning PROBLEM counts, and that the sender keeps looking every 5 minutes even with a watcher. Bed temperature set to one value for every plate type in the PLA presets.
+- **Still to confirm:** the reprint with these changes (started 19:40) finishes with no part knocked loose. Then close this issue.
+

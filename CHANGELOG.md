@@ -2,6 +2,12 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Slow everything for small parts; watcher verdicts
+
+- Step 24: on plates with small parts or print-in-place models with many small feet, every printing speed (not only outer walls and top surfaces) goes to about 100 mm/s or less, and acceleration to about 4000 mm/s².
+- Step 54: an answer that mentions PROBLEM anywhere counts as a problem, even if it starts with OK; the sender keeps looking at the cameras every 5 minutes even while an automatic watcher runs.
+- Reason: a print-in-place dragon failed at layer 4 to 7 (open issue 7). Inner walls at 300 mm/s and infill at 270 mm/s knocked its small feet loose, and the watcher's PROBLEM answers were read as OK because they began with "OK,".
+
 ## 2026-11-20 — No skirt
 
 - Step 21 ("Do not add a skirt") replaces the rule to add a skirt of at least three loops. Steps 30 (file check), 51 (watch the first layer) and 59 (clear the plate) and the OrcaSlicer note no longer mention a skirt.
