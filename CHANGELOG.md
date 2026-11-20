@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — Halfway and finished phone notifications with a picture
+
+- README.md: the recorder now sends the owner a phone notification with a phone 1 picture at halfway and when every print finishes, is cancelled or ends with an error, by itself for every print. Step 40 ("keep the cameras watched continuously") says the watcher notifies on start, problems and pauses, and the agent checks the halfway notification went out (and sends one itself if not). Step 43 ("Before anything is taken off the plate, take a picture") checks the finished notification went out. New practical note on how the notifications are sent.
+- Reason: the owner asked for a notification with a picture at halfway and at the end of every build, not only when a watcher happens to be running.
+
 ## 2026-11-21 — One green light from the person at the printer
 
 - README.md: the checklist is now run entirely by the agent (formerly "the sender"). The [SENDER], [AT PRINTER] and [BOTH] tags are gone. The person at the printer gives one green light per print, confirming four things: the named filament is loaded, the plate is clean, the nozzle is clean, and the printer is ready (nothing blowing on it, someone reachable). The green light list replaces the old person-at-printer steps for loading filament, checking the spool, washing the plate, glue stick, brushing the nozzle, removing strings and checking for drafts, and the "plate clear, nozzle clean, filament confirmed" message.
