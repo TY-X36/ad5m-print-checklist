@@ -7,6 +7,7 @@ The supporting files:
 - **PRINT-LOG.md** — one row per print, with what changed and the result.
 - **CHANGELOG.md** — every change to the checklist and the reason for it.
 - **start-code.gcode** — the tested start of every print.
+- **FILAMENTS.md** — every spool on hand; updated whenever a spool is bought, opened or used up.
 
 ## When a print fails or shows a defect
 1. Write it in OPEN-ISSUES.md straight away: what it looked like, where, the settings in use, and photos or recording.

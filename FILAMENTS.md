@@ -1,0 +1,29 @@
+# Filament on hand
+
+Every spool available for this printer. Use it to choose a material and colour for a print (stage 1) and to know what can be loaded (steps 7 to 10, from "Ask the person at the printer exactly which filament is loaded").
+
+This list is only what is on the shelf. It never replaces asking the person at the printer what is loaded: golden rule 2 still applies.
+
+Printing temperatures come from the Material Table at the bottom of README.md, using the row in the "Material Table row" column. The "Box temp" column is only the maker's range printed on the box.
+
+**Keep it current:** whoever buys, opens or uses up a spool updates this list the same day, and records the change in CHANGELOG.md.
+
+| # | Material Table row | Product | Colour | Brand | Weight | Box temp | Box drying | Status |
+|---|---|---|---|---|---|---|---|---|
+| 1 | PLA (basic) | PLA Basic | Cyan | Unknown (cardboard spool) | ~1 kg | See label | — | Opened |
+| 2 | PLA (basic) | PLA Basic | Red | Unknown (cardboard spool) | ~1 kg | See label | — | Opened, sealed with desiccant |
+| 3 | Silk PLA | Silk PLA | Azure | Keytek | 1 kg | 210–230 °C | — | Boxed |
+| 4 | Silk PLA | Silk PLA tri-colour | Blue / green / purple | Keytek | 1 kg | 210–230 °C | — | Opened 2026-11-20 |
+| 5 | PETG | PETG | White | Keytek | 1 kg | 230–250 °C | — | Boxed |
+| 6 | PETG | PETG | Black | Keytek | 1 kg | 230–250 °C | — | Opened |
+| 7 | PLA (basic) | PLA | Neon green | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Boxed (bought 2026-11-20) |
+| 8 | PLA (basic) | PLA Marble | Grey speckled stone | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Boxed (bought 2026-11-20) |
+| 9 | PETG | PETG | Orange | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Boxed (bought 2026-11-20) |
+| 10 | PETG | PETG | Transparent | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-20 |
+
+## Notes on particular spools
+
+- **Silk PLA tri-colour (4):** the colour shifts along the spool, so a print changes colour by itself. Shinier when the outer walls are printed slowly.
+- **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
+- **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.
+- **Cardboard spools (1, 2):** can shed a little dust; wipe the rims if any shows.

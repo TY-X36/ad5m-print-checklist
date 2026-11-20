@@ -2,6 +2,11 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-20 — Filament list in the checklist
+
+- New file FILAMENTS.md: every spool on hand, with the Material Table row to use, brand, colour, the box's temperature and drying values, and whether it is opened. Linked from "Rules to know before starting" and IMPROVING.md; step 61 ("Put opened filament back in a sealed bag") now also says to update it when a spool is first opened or used up.
+- Reason: the owner wants anyone using the checklist to know what filament is available. The list used to live only on one computer.
+
 ## 2026-11-20 — Watcher stays quiet until plastic flows
 
 - Step 54: an automatic watcher must not pause or alarm before plastic starts coming out.

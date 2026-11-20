@@ -44,6 +44,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 - The plate's coordinates run from -110 to +110 in both directions, with 0,0 at the centre. The front edge is Y = -110.
 - This printer measures the bed with the command `BED_MESH_CALIBRATE`, which can be run from inside a print file.
 - The tested start code lives next to this checklist, in the file `start-code.gcode` in this repository.
+- Every spool on hand (material, brand, colour, whether it is opened) is listed in `FILAMENTS.md` in this repository. Use it to choose what to print with; it never replaces asking what is actually loaded.
 
 ---
 
@@ -130,7 +131,7 @@ Do not move to the next step until the current one is done. If a step cannot be 
 58. **[AT PRINTER]** Let the plate cool for a few minutes, then flex it to release the print. Never use a scraper on the plate surface.
 59. **[AT PRINTER]** Clear the purge line, skirt and leftover strings off the plate.
 60. **[AT PRINTER]** Brush the nozzle once more while it is still warm.
-61. **[AT PRINTER]** Put opened filament back in a sealed bag with a desiccant pack.
+61. **[AT PRINTER]** Put opened filament back in a sealed bag with a desiccant pack. If the spool was opened for the first time or is now used up, update FILAMENTS.md.
 62. **[AT PRINTER]** Report how the print came out, with a photo of the parts if anything is wrong, and always for a test or calibration print.
 63. **[SENDER]** Add a row to PRINT-LOG.md: date, what was printed, filament, what changed since the last print, the result, and where the photos and recording are.
 64. **[BOTH]** If anything went wrong, add it to OPEN-ISSUES.md, then find the cause together and change this checklist as described in IMPROVING.md, so it never happens again.
