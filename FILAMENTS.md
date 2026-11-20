@@ -1,8 +1,8 @@
 # Filament on hand
 
-Every spool available for this printer. Use it to choose a material and colour for a print (stage 1) and to know what can be loaded (steps 7 to 10, from "Ask the person at the printer exactly which filament is loaded").
+Every spool available for this printer. The agent uses it to choose the material and colour for each print (stage 2, steps 7 and 8, from "Choose the filament for this print"), and to judge how the spool has been stored.
 
-This list is only what is on the shelf. It never replaces asking the person at the printer what is loaded: golden rule 2 still applies.
+This list is only what is on the shelf. It never replaces the green light, which confirms the chosen spool is the one actually loaded: golden rule 2 still applies.
 
 Printing temperatures come from the Material Table at the bottom of README.md, using the row in the "Material Table row" column. The "Box temp" column is only the maker's range printed on the box.
 

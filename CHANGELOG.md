@@ -2,6 +2,19 @@
 
 Every change to the checklist is recorded here with the reason for it.
 
+## 2026-11-21 — One green light from the person at the printer
+
+- README.md: the checklist is now run entirely by the agent (formerly "the sender"). The [SENDER], [AT PRINTER] and [BOTH] tags are gone. The person at the printer gives one green light per print, confirming four things: the named filament is loaded, the plate is clean, the nozzle is clean, and the printer is ready (nothing blowing on it, someone reachable). The green light list replaces the old person-at-printer steps for loading filament, checking the spool, washing the plate, glue stick, brushing the nozzle, removing strings and checking for drafts, and the "plate clear, nozzle clean, filament confirmed" message.
+- New golden rule 6: the agent asks for nothing but the green light; anything that needs hands mid-print is an alert, not a step.
+- Filament: the agent now chooses the spool from FILAMENTS.md and judges its storage from FILAMENTS.md and PRINT-LOG.md (a spool left on the printer counts as left out), instead of asking. The green light confirms the spool is loaded and has enough left.
+- Watching the start (heating at 140 °C, purge line dryness, first layer) and stopping a bad start are now done by the agent on camera and over the network. The dryness check on camera looks for steam, bubbles or a rough, pitted line, since popping cannot be heard; the Moisture Table row now says so.
+- The agent checks the nozzle tip on camera after it cools (head to the front, bed lowered) before sending.
+- After the print, the agent clears the printer's finished screen and tells the person the print can be removed; removing it, clearing the plate and the final brush become part of the next green light. The step to put the spool back in a sealed bag is gone: a spool left on the printer is treated as left out in the Moisture Table.
+- The recorder must be reachable before a print starts (it used to be agreed with the person whether to print without one). Prints are always sent over the network with leveling off; starting from the printer's screen is no longer a path.
+- Multi-colour models print in one colour unless the owner asks for manual colour swaps.
+- Steps renumbered from 64 to 47. IMPROVING.md (lessons and editing rules) and FILAMENTS.md updated to match.
+- Reason: the owner wants the person at the printer to give one green light and nothing else; everything else should be done by the agent. Open issue 9 lists what the next prints must confirm.
+
 ## 2026-11-20 — Slow everything for small parts; watcher verdicts
 
 - Step 24: on plates with small parts or print-in-place models with many small feet, every printing speed (not only outer walls and top surfaces) goes to about 100 mm/s or less, and acceleration to about 4000 mm/s².
