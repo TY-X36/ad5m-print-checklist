@@ -16,7 +16,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 | 4 | Silk PLA | Silk PLA tri-colour | Blue / green / purple | Keytek | 1 kg | 210–230 °C | — | Opened 2026-11-20 |
 | 5 | PETG | PETG | White | Keytek | 1 kg | 230–250 °C | — | Boxed |
 | 6 | PETG | PETG | Black | Keytek | 1 kg | 230–250 °C | — | Opened |
-| 7 | PLA (basic) | PLA | Neon green | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Boxed (bought 2026-11-20) |
+| 7 | PLA (basic) | PLA | Neon green | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Opened 2026-11-20; prints at 220 °C, not 205 |
 | 8 | PLA (basic) | PLA Marble | Grey speckled stone | Elegoo | 1 kg | 190–230 °C | 55 °C, 8 h | Boxed (bought 2026-11-20) |
 | 9 | PETG | PETG | Orange | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Boxed (bought 2026-11-20) |
 | 10 | PETG | PETG | Transparent | Slic3D (Jaycar) | 1 kg | 230–260 °C | 65 °C, 8 h | Opened 2026-11-20 |
@@ -24,6 +24,7 @@ Printing temperatures come from the Material Table at the bottom of README.md, u
 ## Notes on particular spools
 
 - **Silk PLA tri-colour (4):** the colour shifts along the spool, so a print changes colour by itself. Shinier when the outer walls are printed slowly.
+- **Neon green PLA (7):** starved and jammed at 205 °C; a file from the previous owner printed it perfectly at 220 °C. Use 220 °C until a temperature test says otherwise (open issue 8).
 - **Marble PLA (8):** small specks mixed in give a stone look, and the matte, speckled surface hides layer lines. With fine layers (0.12 mm or less) it can look and feel like one carved piece. Prints like basic PLA.
 - **Transparent PETG (10):** only looks clear when printed solid (100% infill, every line the same direction), a little hotter and with low fan; any infill pattern shows through. Straight off the printer it is frosted, like sea glass; a clear gloss coat (for example clear nail polish) makes it glassy. Thinner layers make the grooves smaller. A single thin wall (vase mode) is the clearest it gets.
 - **Cardboard spools (1, 2):** can shed a little dust; wipe the rims if any shows.
