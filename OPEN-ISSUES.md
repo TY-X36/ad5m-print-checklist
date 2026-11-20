@@ -48,4 +48,3 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Likely cause:** PETG left in the nozzle when PLA was loaded, never flushed at PETG temperature; PLA at 205 to 215 °C cannot clear it. Possibly made worse by the extruder grinding the filament once it could not push through.
 - **Not yet confirmed:** unload and look at the filament end (ground notch, blob), clear the nozzle with the needle at 240 °C or swap it, reload and check for a full, steady stream.
 - **Proposed checklist change once confirmed:** when the previous filament printed hotter (for example PETG before PLA), purge the new filament at the previous filament's temperature (about 80 to 100 mm) before cooling to the new one, and check the stream is full and steady before printing.
-\n
