@@ -43,3 +43,9 @@ Problems that have been seen but not yet fixed. When one is fixed, move the fix 
 - **Changes made:** step 24 now slows every speed (walls, infill, gap fill, top) to about 100 mm/s and acceleration to about 4000 for small parts and print-in-place models; step 54 now says any answer mentioning PROBLEM counts, and that the sender keeps looking every 5 minutes even with a watcher. Bed temperature set to one value for every plate type in the PLA presets.
 - **Still to confirm:** the reprint with these changes (started 19:40) finishes with no part knocked loose. Then close this issue.
 
+## 8. Nozzle partly, then fully blocked after switching from clear PETG to PLA
+- **Seen (2026-11-20 evening, neon green Elegoo PLA, loaded straight after Slic3D clear PETG at 250 °C):** first dragon reprint had lacy, see-through fill (taken for stringing); next run laid solid small parts but a hollow head piece; purge tests at 245 °C gave only a hair-thin strand (25, 40, 100 mm pushed); finally the printer moved through a whole start with nothing coming out. Photos: `prints/records/glorious_dragon_underextrusion_head.jpg`, `glorious_dragon_try4_starved_head.jpg`, `flow_test_*.jpg` in the project folder.
+- **Likely cause:** PETG left in the nozzle when PLA was loaded, never flushed at PETG temperature; PLA at 205 to 215 °C cannot clear it. Possibly made worse by the extruder grinding the filament once it could not push through.
+- **Not yet confirmed:** unload and look at the filament end (ground notch, blob), clear the nozzle with the needle at 240 °C or swap it, reload and check for a full, steady stream.
+- **Proposed checklist change once confirmed:** when the previous filament printed hotter (for example PETG before PLA), purge the new filament at the previous filament's temperature (about 80 to 100 mm) before cooling to the new one, and check the stream is full and steady before printing.
+\n
